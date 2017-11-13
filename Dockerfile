@@ -10,7 +10,7 @@ RUN pip install --upgrade setuptools
 
 # installing Django and Django-tagging versions before
 # as latest versions pulled by Sumatra are incompatible
-RUN pip install django==1.3.1
+RUN pip install django==1.6
 RUN pip install django-tagging==0.3.1
 
 # need wget for later command, git for Sumatra
