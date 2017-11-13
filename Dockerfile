@@ -14,7 +14,7 @@ RUN pip install django==1.3.1
 RUN pip install django-tagging==0.3.1
 
 # need wget for later command, git for Sumatra
-RUN apt-get install -y wget git unzip
+RUN apt-get install -y wget git unzip mercurial
 
 # get the 0.5.2 Sumatra release from GitHub and
 # replace "http" with "https" in distribute_setup.py,
