@@ -20,9 +20,9 @@ RUN apt-get install -y wget git unzip
 # replace "http" with "https" in distribute_setup.py,
 # as pypi disabled non-https access as of November 2017
 RUN wget https://bitbucket.org/Felix11H/sumatra/get/fcda1e56516e.zip
-RUN unzip -o Felix11H-sumatra-fcda1e56516e.zip
-RUN sed -i 's/http/https/g' Felix11H-sumatra-fcda1e56516e/distribute_setup.py
-RUN cd Felix11H-sumatra-fcda1e56516e/ && pip install .
+RUN unzip -o fcda1e56516e.zip
+RUN sed -i 's/http/https/g' fcda1e56516e/distribute_setup.py
+RUN cd fcda1e56516e/ && pip install .
 
 RUN pip install gitpython==0.3.7
 
