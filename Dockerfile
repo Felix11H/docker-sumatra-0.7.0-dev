@@ -16,8 +16,8 @@ RUN pip install django-tagging==0.3.1
 # need wget for later command, git for Sumatra
 RUN apt-get install -y wget git unzip mercurial
 
-# get the 0.5.2 Sumatra release from GitHub and
-# replace "http" with "https" in distribute_setup.py,
+# get the 0.7.0 GSoC development version from Bitbucket 
+# and replace "http" with "https" in distribute_setup.py,
 # as pypi disabled non-https access as of November 2017
 RUN wget https://bitbucket.org/Felix11H/sumatra/get/fcda1e56516e.zip
 RUN unzip -o fcda1e56516e.zip
